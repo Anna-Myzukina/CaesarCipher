@@ -41,4 +41,4 @@ In cryptography, a Caesar cipher, also known as Caesar’s cipher, the shift cip
         "".split(',', -1)               #=> []
 1. [.each](https://ruby-doc.org/core-2.6.4/Array.html#method-i-each)
 1. [.include?](https://ruby-doc.org/core-2.4.0/String.html#method-i-include-3F)
-1. .find_index
+1. [.find_index](https://ruby-doc.org/core-2.5.0/Array.html#method-i-find_index)

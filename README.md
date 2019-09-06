@@ -17,3 +17,28 @@ In cryptography, a Caesar cipher, also known as Caesar’s cipher, the shift cip
 *  You will need to remember how to convert a string into a number.
 *  Don’t forget to wrap from z to a.
 *  Don’t forget to keep the same case.
+
+### Solving solution I use next methods: 
+1. [to_a](https://ruby-doc.org/core-2.6.4/Enumerable.html#method-i-to_a)
+
+        >(1..7).to_a                     
+        #=> [1, 2, 3, 4, 5, 6, 7]
+1. [.split](https://ruby-doc.org/core-2.4.0/String.html#method-i-split)
+
+        " now's  the time".split        #=> ["now's", "the", "time"]
+        " now's  the time".split(' ')   #=> ["now's", "the", "time"]
+        " now's  the time".split(/ /)   #=> ["", "now's", "", "the", "time"]
+        "1, 2.34,56, 7".split(%r{,\s*}) #=> ["1", "2.34", "56", "7"]
+        "hello".split(//)               #=> ["h", "e", "l", "l", "o"]
+        "hello".split(//, 3)            #=> ["h", "e", "llo"]
+        "hi mom".split(%r{\s*})         #=> ["h", "i", "m", "o", "m"]
+
+        "mellow yellow".split("ello")   #=> ["m", "w y", "w"]
+        "1,2,,3,4,,".split(',')         #=> ["1", "2", "", "3", "4"]
+        "1,2,,3,4,,".split(',', 4)      #=> ["1", "2", "", "3,4,,"]
+        "1,2,,3,4,,".split(',', -4)     #=> ["1", "2", "", "3", "4", "", ""]
+
+        "".split(',', -1)               #=> []
+1. [.each](https://ruby-doc.org/core-2.6.4/Array.html#method-i-each)
+1. [.include?](https://ruby-doc.org/core-2.4.0/String.html#method-i-include-3F)
+1. .find_index
